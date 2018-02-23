@@ -12,4 +12,4 @@ yum install -y VirtualBox-5.1
 
 yum -y install https://releases.hashicorp.com/vagrant/1.9.6/vagrant_1.9.6_x86_64.rpm
 
-mkdir ~/vagrant
+mkdir /home/vagrant
