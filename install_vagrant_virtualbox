@@ -6,6 +6,8 @@ cd /etc/yum.repo.d/
 
 wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 
+yum update
+
 yum install -y VirtualBox-5.1
 
 /sbin/rcvboxdrv setup
