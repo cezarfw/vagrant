@@ -1,0 +1,15 @@
+#!/bin/bash
+
+yum -y install wget gcc dkms make qt libgomp patch kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge
+
+cd /etc/yum.repo.d/
+
+wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+
+yum install -y VirtualBox-5.1
+
+/sbin/rcvboxdrv setup
+
+yum -y install https://releases.hashicorp.com/vagrant/1.9.6/vagrant_1.9.6_x86_64.rpm
+
+mkdir ~/vagrant
